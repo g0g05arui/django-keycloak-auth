@@ -1,5 +1,5 @@
 from datetime import datetime, timezone
-from functools import cached_property
+from werkzeug.utils import cached_property
 from typing import Dict, List, Optional, Union
 from urllib.parse import urlparse
 
