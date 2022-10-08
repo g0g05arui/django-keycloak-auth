@@ -43,7 +43,7 @@ class Migration(migrations.Migration):
                 ("is_active", models.BooleanField(default=True)),
                 ("date_joined", models.DateTimeField(auto_now_add=True)),
                 (
-                    "groups",
+                    "_groups",
                     models.ManyToManyField(
                         blank=True,
                         help_text="The groups this user belongs to. A user will get all permissions granted to each of their groups.",
@@ -54,7 +54,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
                 (
-                    "user_permissions",
+                    "_user_permissions",
                     models.ManyToManyField(
                         blank=True,
                         help_text="Specific permissions for this user.",
